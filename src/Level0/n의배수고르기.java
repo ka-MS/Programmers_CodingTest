@@ -1,5 +1,9 @@
 package Level0;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class n의배수고르기 {
 
 	public static void main(String[] args) {
@@ -7,7 +11,19 @@ public class n의배수고르기 {
 		// solution 함수를 완성해주세요.
 		int n = 3;
 		int[] numlist = {4, 5, 6, 7, 8, 9, 10, 11, 12};
+		List<Integer> arr = new ArrayList<Integer>();
+		for(int i : numlist) {
+			if(i%n == 0 ) {
+				arr.add(i);
+			}
+		}
+		int[] answer = new int[arr.size()];
+		for(int i = 0; i < arr.size(); i++) {
+			answer[i] = arr.get(i);
+		}
 		
+		//stream사용하여 처리
+		Arrays.stream(numlist).filter(value -> value % n == 0).toArray();
 	}
 
 }
