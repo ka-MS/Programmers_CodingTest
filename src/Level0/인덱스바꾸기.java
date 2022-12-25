@@ -31,14 +31,16 @@ public class 인덱스바꾸기 {
 		ch[num2] = my_string.charAt(num1);
 
 		answer = String.valueOf(ch);
+		
 		// 얕은복사 깊은복사 풀이
 		String[] arr2 = my_string.split("");
         String temp = arr2[num1];
-        arr[num1] = arr[num2];
-//        arr[num2] = temp;
+        arr2[num1] = arr2[num2];
+        arr2[num2] = temp;
         for(String str2 : arr2){
-            answer += str;
+            answer += str2;
         }
+        System.out.println(answer);
 	}
 
 }
