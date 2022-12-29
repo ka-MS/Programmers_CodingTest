@@ -25,9 +25,11 @@ public class 중복된문자제거fail {
 		answer = String.join("", sarr);
 		System.out.println(answer);
 		
+		//map과 set을 더 공부해야함
 		// set을 이용한 풀이
 		String[] answers = my_string.split("");
-//        Set<String> set = new LinkedHashSet()<String>(Arrays.asList(answers));
+        Set<String> set = new LinkedHashSet<String>(Arrays.asList(answers));
+        System.out.println(set);
 	}
 
 }
