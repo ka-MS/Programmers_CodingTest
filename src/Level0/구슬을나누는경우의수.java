@@ -27,6 +27,7 @@ public class 구슬을나누는경우의수 {
 	}
 	
 	
+	
 	// 팩토리얼 재귀함수
 	public BigInteger fact(int n) {
 		BigInteger a = new BigInteger(n+"");
@@ -38,13 +39,22 @@ public class 구슬을나누는경우의수 {
 			return c;
 		}
 	}
-//	public long fact(int n ) {
-//		if(n <=1) {
-//			return n;
-//		}else {
-//			return fact(n-1)*n;
-//		}
-//	}
+	
+	// 간단 재귀 풀이 곱하기와 나눗샘을 동시에 처리함 
+	// balls의 30 ->20 까지는 share의 20 -> 10 까지와 나눔
+	// 그 다음부터는 9,9,8,8,7,7,6,6,5,5,4,4,3,3,2,2 이렇게 나눌것임
+	public long solution(int balls, int share) {
+        share = Math.min(balls - share, share);
+
+        if (share == 0)
+            return 1;
+
+        long result = solution(balls - 1, share - 1);
+        result *= balls;
+        result /= share;
+
+        return result;
+    }
 	
 	// DFS알고리즘으로 재작성 하기
 	
