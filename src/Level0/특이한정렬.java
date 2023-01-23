@@ -35,7 +35,7 @@ public class 특이한정렬 {
 			answer[i] = entry.get(i).getKey();
 			System.out.println(answer[i]);
 		}
-		
+		 
 		
 		
 		
