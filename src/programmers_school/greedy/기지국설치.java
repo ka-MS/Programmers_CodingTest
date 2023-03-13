@@ -7,10 +7,9 @@ public class 기지국설치 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 200000000;
-		int[] stations = { 4, 11, 18 };
+		int[] stations = { 4};
 		int w = 2;
-		System.out.println(solution3(n, stations, w));
-
+		System.out.println(solution4(n, stations, w));
 	}
 
 	public static int solution(int n, int[] stations, int w) {
@@ -21,20 +20,17 @@ public class 기지국설치 {
 		}
 		for (int k : stations) {
 			for (int i = 0; i < 1 + w * 2; i++) {
-				if (apList.contains(k - w + i)) {
 					apList.remove(k - w + i);
-				}
 			}
 		}
 		Iterator it = apList.iterator();
 		int count = 1;
 		while (it.hasNext()) {
 			int start = (int) it.next();
+			it.remove();
 			if (apList.contains(start + 1) && count < 1 + w * 2) {
-				it.remove();
 				count++;
 			} else {
-				it.remove();
 				answer++;
 				count = 1;
 			}
@@ -81,6 +77,19 @@ public class 기지국설치 {
 			}
 		}
 
+		return answer;
+	}
+	
+	public static int solution4(int n, int[] stations, int w) {
+		int answer = 0;
+		int range = w*2+1;
+		int check = 0;
+		for(int station : stations) {
+			int st = station+w-check;
+			answer += st % range > 0 ? st/range :st/range-1;
+			check = station + w;
+		}
+		answer += (n-check) % range > 0  ? (n-check)/range+1 : (n-check)/range;
 		return answer;
 	}
 
