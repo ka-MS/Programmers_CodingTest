@@ -1,9 +1,9 @@
 package Level1;
 
-public class Â¦¼ö¿ÍÈ¦¼ö {
+public class ì§ìˆ˜ì™€í™€ìˆ˜ {
 
 	public static void main(String[] args) {
-		// Á¤¼ö numÀÌ Â¦¼öÀÏ °æ¿ì "Even"À» ¹İÈ¯ÇÏ°í È¦¼öÀÎ °æ¿ì "Odd"¸¦ ¹İÈ¯ÇÏ´Â ÇÔ¼ö, solutionÀ» ¿Ï¼ºÇØÁÖ¼¼¿ä.
+		// ì •ìˆ˜ numì´ ì§ìˆ˜ì¼ ê²½ìš° "Even"ì„ ë°˜í™˜í•˜ê³  í™€ìˆ˜ì¸ ê²½ìš° "Odd"ë¥¼ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜, solutionì„ ì™„ì„±í•´ì£¼ì„¸ìš”.
 		int num = 3;
 		String answer = "";
         if(num%2 == 0){

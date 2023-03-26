@@ -1,9 +1,9 @@
 package Level1;
 
-public class Æò±Õ±¸ÇÏ±â {
+public class í‰ê· êµ¬í•˜ê¸° {
 
 	public static void main(String[] args) {
-		// Á¤¼ö¸¦ ´ã°í ÀÖ´Â ¹è¿­ arrÀÇ Æò±Õ°ªÀ» returnÇÏ´Â ÇÔ¼ö, solutionÀ» ¿Ï¼ºÇØº¸¼¼¿ä.
+		// ì •ìˆ˜ë¥¼ ë‹´ê³  ìˆëŠ” ë°°ì—´ arrì˜ í‰ê· ê°’ì„ returní•˜ëŠ” í•¨ìˆ˜, solutionì„ ì™„ì„±í•´ë³´ì„¸ìš”.
 		int[] arr = {1,2,3,4};
 		double answer =0;
 		for(int i : arr) {

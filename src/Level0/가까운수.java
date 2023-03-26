@@ -1,10 +1,10 @@
 package Level0;
 
-public class ê°€ê¹Œìš´ìˆ˜ {
+public class °¡±î¿î¼ö {
 
 	public static void main(String[] args) {
-		// ì •ìˆ˜ ë°°ì—´ arrayì™€ ì •ìˆ˜ nì´ ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ì§ˆ ë•Œ, arrayì— ë“¤ì–´ìˆëŠ” ì •ìˆ˜ ì¤‘ nê³¼ ê°€ì¥ ê°€ê¹Œìš´ ìˆ˜ë¥¼ return í•˜ë„ë¡
-		// solution í•¨ìˆ˜ë¥¼ ì™„ì„±í•´ì£¼ì„¸ìš”.
+		// Á¤¼ö ¹è¿­ array¿Í Á¤¼ö nÀÌ ¸Å°³º¯¼ö·Î ÁÖ¾îÁú ¶§, array¿¡ µé¾îÀÖ´Â Á¤¼ö Áß n°ú °¡Àå °¡±î¿î ¼ö¸¦ return ÇÏµµ·Ï
+		// solution ÇÔ¼ö¸¦ ¿Ï¼ºÇØÁÖ¼¼¿ä.
 		
 		int[] array = {11,8,12};
 		int n = 10;
