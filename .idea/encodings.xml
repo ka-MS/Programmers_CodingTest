@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/Level0" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/Level1/문자열내p와y의개수.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Level1/약수의합.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Level1/자릿수더하기.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Level1/짝수와홀수.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Level1/평균구하기.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
