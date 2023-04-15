@@ -24,13 +24,10 @@ public class 겹치는선분의길이0 {
         }
         int[] line = new int[end - start+1];
         for (int j = 0; j < lines.length; j++) {
-            int st = lines[j][0] - start; // 이전 배열의 end값과 다음 배열의 start값이 겹쳤을 때 표시를 하지 않아야한다.
+            int st = lines[j][0] - start; // 시작점 혹은 끝점중 하나는 표시를 하지 않아야한다. 0번부터 2번까지의 선이 중복이라면 숫자는 3개지만 칸은 2개니까
             int ed = lines[j][1] - start;
 
-            for(int i =st; i <= ed; i++) {
-                if(lines[j][0] != start  && i == st ){ // 배열의 시작값은 최소값이 아니라면 증가시키지 않는다
-                    continue;
-                }
+            for(int i =st; i < ed; i++) {
                 line[i] ++;
             }
         }
@@ -41,4 +38,6 @@ public class 겹치는선분의길이0 {
         }
         return answer;
     }
+
+
 }
