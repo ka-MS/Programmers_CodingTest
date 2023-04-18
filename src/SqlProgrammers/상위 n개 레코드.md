@@ -14,6 +14,8 @@ SEX_UPON_INTAKE	VARCHAR(N)	FALSE
 ### ORACLE
 ROWNUM을 사용하면 데이터에 일련번호를 붙여 테이블이나 집합에서 원하는 행만 가져올 수 있다.
 WHERE ROWNUM <= 3; 와 같이 작성하면 TOP3의 데이터를 가져올 수 있다.
+ROWNUM에서 주의해야 할 점은 >= 3이나 =3과 같이 1번 이외의 숫자부터 출력할 수는 없다.
+
 이번 문제에서 주의해야할 부분은 아래와 같이 작성했을 때 작동하지 않는다는 것 이다.
 >SELECT NAME
 FROM ANIMAL_INS
@@ -24,6 +26,9 @@ ORDER BY DATETIME;
 쿼리문은 FROM - ON (JOIN 조건) - JOIN - WHERE - GROUP BY - HAVING - SELECT - DISTINCT - ORDER BY 순으로 실행된다.
 위와 같이 작성하면 DATETIME으로 정렬하기 전에 WHERE문으로 ROWNUM 1개를 뽑았기 때문에 의도한 결과가 나오지 않는다.
 그렇기 때문에 서브쿼리를 사용하여 먼저 정렬을 하고 정렬된 집합에서 1번 데이터를 가져오는 방식을 사용해야 한다.
+
+
+
 
 ### MYSQL
 MYSQL에서는 LIMIT을 사용하여 데이터를 가져올 수 있다.
