@@ -32,7 +32,8 @@ public class 가장큰수 {
 			sb.append(str);
 		}
 		String answer = list[0].equals("0") ? "0"  : new String(sb);
-		return new String(answer);
+		// 0으로 시작하는 경우는 복수의 0 이 있는 경우 이므로 000같은 답이 나올 수 있으니 0으로 바꿔줌
+		return answer;
 	}
 
 	public static String solution2(int[] numbers){
